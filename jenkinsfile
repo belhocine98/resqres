@@ -13,6 +13,8 @@ pipeline {
                 script {
                     
                     sh 'echo "Téléchargement des fichiers requis..."'
+                    sh 'ls -al'
+
                 }
             }
         }
