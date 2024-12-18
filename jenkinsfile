@@ -24,7 +24,7 @@ pipeline {
                 script {
                     
                     sh '''
-    newman run reqres.postman_collection.json --disable-unicode --suppress-exit-code
+    newman run reqres.postman_collection.json 
 '''
 
                 }
