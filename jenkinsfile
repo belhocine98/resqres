@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'postman/newman'
+            image 'postman/newman:alpine'
         }
     }
 
@@ -24,7 +24,7 @@ pipeline {
                 script {
                     
                     sh '''
-    newman run reqres.postman_collection.json 
+    newman run reqres.postman_collection.json  
 '''
 
                 }
